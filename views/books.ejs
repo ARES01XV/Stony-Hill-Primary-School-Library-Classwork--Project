@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <!-- link -->
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="https://kit.fontawesome.com/b7a2ac83f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cards_container">
+        <% Object.values(books).forEach((book) => {%>  
+        <div class="card">
+            <div class="item_picture">
+                <img src="https://embed.cdn.pais.scholastic.com/v1/channels/sso/products/identifiers/isbn/9780394872186/primary/renditions/700">
+            </div>
+            <br><br>
+            <div class="book_category">
+                <h3><%= books.category%></h3>
+            </div>
+            <br>
+            <div class="book_name">
+                <p><%= books.book_name%> </p>
+            </div>
+            <br>
+            <div class="book_author">
+                <b><%= books.book_author%></b>
+            </div>
+            <div class="borrow">
+                <a href="#">Borrow</a>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</body>
+</html>

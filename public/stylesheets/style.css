@@ -6,68 +6,223 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* body{
-  background: grey;
+body{
+  background: #62c4e2;
+}
+
+/* INDEX ***************************** */
+.main_section{
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 100vh;
+  background: url(https://cdn.discordapp.com/attachments/882362353507778613/978779035964432444/06d855cd61355ca9c3275dc4c4e1536f-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  position: relative;
+}
+
+.main_section h1{
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 8%;
+  top: 20%;
+  width: 50%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 1000;
+  color: white;
+}
+
+.main_section>a{
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 30%;
+  top: 65%;
+  text-decoration: none;
+  background: red;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+}
+.main_section>a:hover{
+  background: rgb(149, 3, 3);
+}
+
+/* admin login*********************** */
+.admin_hidden a {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  color: #62c4e2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: default;
+}
+
+/* STUDENT LOGIN ***************************** */
+.student_login{
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  width: 50%;
+  padding: 5%;
+  margin: auto;
+  background: white;
+  position: relative;
+  margin-top: 7%;
+}
+
+.student_login h1{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.student_login h3{
+  margin-left: 58%;
+  transform: translateX(-50%);
+}
+
+.student_login input{
+  padding: 1%;
+  outline: none;
+  width: 100%;
+}
+
+.student_login button{
+  border: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: red;
+  font-size: 16px;
+  color: white;
+  padding: 2% 2.5%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.student_login button:hover {
+  background: rgb(149, 3, 3);
+}
+
+/* ADMIN ***************************** */
+/* .table_container{
+  padding: 1%;
 } */
 
-/* CARDS***************************** */
+/* ADMIN LOGIN ***************************** */
+.admin_login{
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  width: 50%;
+  padding: 5%;
+  margin: auto;
+  background: white;
+  position: relative;
+  margin-top: 7%;
+}
+
+.admin_login h1{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.admin_login input{
+  padding: 1%;
+  outline: none;
+  width: 100%;
+}
+
+.admin_login button{
+  border: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: red;
+  font-size: 16px;
+  color: white;
+  padding: 2% 2.5%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.admin_login button:hover {
+  background: rgb(149, 3, 3);
+}
+
+/* BOOKS ***************************** */
+.search_bar{
+  /* border: 1px solid red; */
+  height: 40px;
+  width: 35vw;
+  margin: 1%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.search_bar input{
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  width: 89%;
+  outline: none;
+  padding: 0 3%;
+}
+
+.search_bar a{
+  border-radius: 5px;
+  text-decoration: none;
+  background: red;
+  padding: 2.8%;
+  color: black;
+}
+.search_bar a:hover{
+  color: white;
+  background: rgb(149, 3, 3);   
+}
+
 .cards_container{
   /* border: 1px solid red; */
+  border-top: 1px solid grey;
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .card{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 25%;
   height: 450px;
   border-radius: 20px;
   margin: 3% 4%;
   text-align: center;
   padding: 1%;
-  color: red;
   background: white;
   position: relative;
 }
-/* .card:hover{
-  background: #292929;
-} */
 
-.item_picture img{
+.book_picture img{
   width: 60%;
   /* border-radius: 50%; */
   margin-left: 50%;
   transform: translateX(-50%);
-  /* border: 4px solid grey; */
+  border: 4px solid grey;
 }
-
-/* .item_price b{
-  color: #3ef900;
-} */
 
 .borrow a{
-  /* border: 1px solid red; */
-  width: 50%;
-  background: #3ef900;
-  padding: 2%;
-  border-radius: 30px;
+  text-decoration: none;
+  border: none;
   position: absolute;
   left: 50%;
-  bottom: 2%;
+  bottom: 5%;
   transform: translateX(-50%);
+  background: red;
+  font-size: 16px;
+  color: white;
+  padding: 2% 7%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.borrow a:hover{
+  background: rgb(149, 3, 3);
 }
 
-/* admin login*********************** */
-.admin_login a {
-  border: 1px solid red;
-  text-decoration: none;
-  color: #343434;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  cursor: default;
-}
 
 
 

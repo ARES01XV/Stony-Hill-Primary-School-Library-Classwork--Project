@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin_login</title>
+    <!-- links -->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-    <form action="admin_login/login" method="post">
+    <form action="admin_login/login" method="post" class="admin_login">
         <h1>Admin Login</h1>
-    
+            <br><br>
         <div>
             <label for="email">Email</label><br>
             <input type="text" id="email" name="email">
-        </div>
+        </div><br>
         <div class="input_ctrl">
             <label for="password">Password</label><br>
             <input type="password" id="password" name="password">
         </div>
-    
+            <br><br>
         <button type="submit">Login</button>
     </form>
 </body>

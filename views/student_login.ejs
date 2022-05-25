@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>student login</title>
+    <title>student_login</title>
+    <!-- links -->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
 <body>
-    <form action="student_login/login" method="post">
+    <form action="student_login/login" method="post" class="student_login">
         <h1>Student Login</h1>
-
+        <h3>Hello again...</h3>
+            <br><br>
         <div>
             <label for="email">Email</label><br>
             <input type="text" id="email" name="email" >
-        </div>
-        <div class="input_ctrl">
+        </div><br>
+        <div>
             <label for="password">Password</label><br>
             <input type="password" id="password" name="password">
         </div>
+            <br><br>
 
         <button type="submit">Login</button>
     </form>

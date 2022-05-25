@@ -9,23 +9,30 @@
     <script src="https://kit.fontawesome.com/b7a2ac83f3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="search_bar">
+        <input type="search" name="search" placeholder="search books...">
+        <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+    </div>
+        
     <div class="cards_container">
-        <% Object.values(books).forEach((book) => {%>  
+        <% Object.values(books).forEach((books) => {%>  
         <div class="card">
-            <div class="item_picture">
-                <img src="https://embed.cdn.pais.scholastic.com/v1/channels/sso/products/identifiers/isbn/9780394872186/primary/renditions/700">
+            <div class="book_picture">
+                <img src="<%= books.book_picture%>">
             </div>
-            <br><br>
-            <div class="book_category">
+            <br>
+            <!-- <div class="book_category">
                 <h3><%= books.category%></h3>
-            </div>
+            </div> -->
             <br>
             <div class="book_name">
-                <p><%= books.book_name%> </p>
+                <b><%= books.book_name%> </b>
             </div>
-            <br>
+            
             <div class="book_author">
-                <b><%= books.book_author%></b>
+                <p>By: <%= books.book_author%></p>
             </div>
             <div class="borrow">
                 <a href="#">Borrow</a>

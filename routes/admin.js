@@ -5,14 +5,27 @@ var conn = require('../lib/db');
 
 // GET admin 
 router.get('/', function(req, res) {
-  conn.query('SELECT * FROM shps_library.requests, students WHERE requests.student_id = students.student_id', (err, rows) => {
+  if(req.session.loggedin === true){
+    conn.query('SELECT * FROM shps_library.requests, students , books WHERE requests.student_id = students.student_id AND requests.book_id = books.book_id',
+    (err, rows) => {
     if (err) {
       res.render('admin', { title: 'Admin', requests: '', students: ''});
     } else {
       res.render('admin', { title: 'Admin',  requests: rows, students: rows});
     }
   });
+  } else {
+    res.redirect('/admin_login')
+  }
 });
+
+// Log Out
+router.get('/logout', (req, res) => {
+  req.session.destroy();
+  res.redirect('/admin_login')
+});
+
+
 
 // delete
 // router.get('/delete/:admin_id', function(req, res) {

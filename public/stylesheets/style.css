@@ -107,6 +107,27 @@ body{
   padding: 1%;
 } */
 
+.book_request{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+.book_request a{
+  text-decoration: none;
+  border: none;
+  background: red;
+    font-size: 16px;
+    color: white;
+    padding: 1%;
+    font-weight: bold;
+}
+.book_request a:hover{
+  background: rgb(149, 3, 3);
+  color: white !important;
+}
+
 /* ADMIN LOGIN ***************************** */
 .admin_login{
   /* border: 1px solid red; */
@@ -147,13 +168,28 @@ body{
 }
 
 /* BOOKS ***************************** */
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1%;
+}
+
+.nav>a{
+  text-decoration: none;
+  border: none;
+  background: red;
+  font-size: 16px;
+  color: white;
+  padding: 1% 2%;
+  font-weight: bold;
+} 
+
+
 .search_bar{
   /* border: 1px solid red; */
   height: 40px;
   width: 35vw;
-  margin: 1%;
-  margin-left: 50%;
-  transform: translateX(-50%);
   overflow: hidden;
 }
 
@@ -226,3 +262,10 @@ body{
 
 
 
+/* 
+sessions,
+borw btn diplys: book reserved & due date OR borrw lmt reached,
+date shows red in table for admin if outstanding???,
+
+
+*/

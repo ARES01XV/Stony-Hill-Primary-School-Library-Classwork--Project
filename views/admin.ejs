@@ -14,16 +14,19 @@
 <body>
     <div class="table_container">
 
-        <h3>Book Requests</h3>
+        <div class="book_request">
+            <h3>Book Requests</h3>
+            <a href="admin/logout">Log out</a>
+        </div>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">Student ID</th>
                     <th scope="col">First Name</th>
                     <th scope="col">Last Name</th>
-                    <th scope="col">Borrowed</th>
+                    <th scope="col">Book(s) Borrowed</th>
                     <th scope="col">Book ID</th>
-                    <th scope="col">Approval</th>
+                    <th scope="col">Book Name</th>
                     <th scope="col">Approved Date</th>
                     <th scope="col">Due Date</th>
                 </tr>
@@ -36,7 +39,7 @@
                         <td> <%= requests.last_nm %> </td>
                         <td> <%= requests.borrowed %> </td>
                         <td> <%= requests.book_id %> </td>
-                        <td> <%= requests.approval %> </td>
+                        <td> <%= requests.book_name %> </td>
                         <td> <%= requests.approved_date %> </td>
                         <td> <%= requests.due_date %> </td>
                     </tr>
